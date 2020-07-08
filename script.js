@@ -21,8 +21,8 @@ var topSpeedOfBall = 0;
 var leftSpeedOfBall = 0;
 
 //random speed
-topSpeedOfBall = Math.floor(Math.random() * 76 + 25) / 30;
-leftSpeedOfBall = Math.floor(Math.random() * 76 + 25) / 30;
+topSpeedOfBall = Math.floor(Math.random() * 55 + 25) / 30;
+leftSpeedOfBall = Math.floor(Math.random() * 55 + 25) / 30;
 // random ball direction
 if (Math.floor(Math.random() * 2) == 0) {
     topSpeedOfBall = -topSpeedOfBall;
@@ -54,8 +54,8 @@ window.setInterval(function update()
             $("#p2 p").html(score2);
             topPositionOfBall =st;
             leftPositionOfBall=sl;
-            topSpeedOfBall = Math.floor(Math.random() * 76 + 25) / 30;
-            leftSpeedOfBall = Math.floor(Math.random() * 76 + 25) / 30;
+            topSpeedOfBall = Math.floor(Math.random() * 55 + 50) / 30;
+            leftSpeedOfBall = Math.floor(Math.random() * 55 + 50) / 30;
             // random ball direction
             if (Math.floor(Math.random() * 2) == 0) {
                 topSpeedOfBall = -topSpeedOfBall;
@@ -77,8 +77,8 @@ window.setInterval(function update()
             $("#p1 p").html(score1);
             topPositionOfBall =st;
             leftPositionOfBall=sl;
-            topSpeedOfBall = Math.floor(Math.random() * 76 + 25) / 30;
-            leftSpeedOfBall = Math.floor(Math.random() * 76 + 25) / 30;
+            topSpeedOfBall = Math.floor(Math.random() * 55 + 50) / 30;
+            leftSpeedOfBall = Math.floor(Math.random() * 55 + 50) / 30;
             // random ball direction
             if (Math.floor(Math.random() * 2) == 0) {
                 topSpeedOfBall = -topSpeedOfBall;
@@ -93,17 +93,6 @@ window.setInterval(function update()
      ball.style.top = (topPositionOfBall) + "px";
      ball.style.left = (leftPositionOfBall) + "px";
 }, 1000 / 60);
-
-
-
-
-
-
-
-
-
-
-
 
 
 //initializing paddle location
